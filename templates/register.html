@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        
+        .box{
+            width: 440px;
+            height: 500px;
+            background: #f2f2f2;
+            padding: 20px;
+        }
+
+        .box h1{
+            margin: 0;
+            height: 50px;
+            font-size: 25px;
+            font-weight: normal;
+            line-height: 50px;
+            border-bottom: 1px solid #d8d8d8;
+        }
+    
+        .user, .passwd{
+            width: 240px;
+            height: 24px;
+            
+        }
+        
+        .info textarea{
+            width: 240px;
+            height: 100px;
+        }
+
+        .native select{
+            width: 120px;
+            height: 24px;
+        }
+
+        .button{
+            margin-left: 90px;
+        }
+
+        label{
+            width: 80px;
+            text-align:right;
+            float:left;
+            margin-right: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>注册信息</h1>
+        <form action="" method="post">
+            <p>
+                <label for="">用户名 :</label>
+                <input type="text" name="username" placeholder="请输入您的用户名" class="user">
+            </p>
+
+            <p>
+                <label for="">密码 :</label>
+                <input type="password" name="password" placeholder="请输入您的密码" class="passwd">
+            </p>
+
+            <p>
+                <label for="">性别 :</label>
+                <input type="radio" name="gender" value="0"> 男
+                <input type="radio" name="gender" value="1"> 女
+            </p>
+            
+            <p>
+                <label for="">爱好 :</label>
+                <input type="checkbox" name="aihao" value="chouyan"> 抽烟
+                <input type="checkbox" name="aihao" value="hejiu"> 喝酒
+                <input type="checkbox" name="aihao" value="tangtou"> 烫头
+            </p>
+
+            <p>
+                <label for="">上传照片 :</label>
+                <input type="file" name="pic">
+            </p>
+            <p class="info">
+                <!-- <div class="desc">                 -->
+                    <label for="">个人描述 :</label>
+                <!-- </div> -->
+
+                <textarea name="info" cols="30" rows="5"></textarea>
+            </p>
+
+            <p class=" native">
+                <label for="">籍贯 :</label>
+                <select name="haha">
+                    <option value="0">陕西</option>
+                </select>
+            </p>
+
+            <p class="button">
+                <input type="submit" >
+                <input type="reset" >
+            </p>
+        </form>
+    </div>
+</body>
+</html>
